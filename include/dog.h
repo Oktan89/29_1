@@ -11,23 +11,22 @@ public:
         std::cout << "Bark ";
     }
 
-    virtual void meeting(Animal* animal) override
+    virtual void meeting(Animal *animal) override
     {
-        animal->meeting(this);   
+        animal->meeting(this);
     }
 
-    virtual void meeting(Cat* cat) override
+    virtual void meeting(Cat *cat) override
     {
-        std::cout<<"Bark Meow";   
+        std::cout << "Bark Meow";
     }
 
-    virtual void meeting(Dog* dog) override
+    virtual void meeting(Dog *dog) override
     {
-        std::cout<<"Woof-Woof"; 
+        std::cout << "Woof-Woof";
     }
 
     virtual ~Dog()
     {
-      //  std::cout << "Dog exit" << std::endl;
     }
 };
