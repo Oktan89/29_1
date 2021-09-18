@@ -3,7 +3,7 @@
 #include "animal.h"
 #include "dog.h"
 
-class Cat : public Animal
+class Cat : public IAnimal
 {
 public:
     void voice()
@@ -11,7 +11,7 @@ public:
         std::cout << "Meow ";
     }
 
-    virtual void meeting(Animal *animal) override
+    virtual void meeting(IAnimal *animal) override
     {
         animal->meeting(this);
     }

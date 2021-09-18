@@ -3,11 +3,11 @@
 class Cat;
 class Dog;
 
-class Animal
+class IAnimal
 {
 public:
-    virtual void meeting(Animal*) = 0;
+    virtual void meeting(IAnimal*) = 0;
     virtual void meeting(Cat*) = 0;
     virtual void meeting(Dog*) = 0;
-    virtual ~Animal(){}
+    virtual ~IAnimal(){}
 };

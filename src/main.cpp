@@ -4,7 +4,7 @@
 #include <dog.h>
 #include <cat.h>
 
-void meeting(Animal *a, Animal *b)
+void meeting(IAnimal *a, IAnimal *b)
 {
     a->meeting(b);
     std::cout<<std::endl;
@@ -12,10 +12,10 @@ void meeting(Animal *a, Animal *b)
 
 int main()
 {
-    Animal *a = new Dog();
-    Animal *b = new Cat();
+    IAnimal *a = new Dog();
+    IAnimal *b = new Cat();
     meeting(b, a);
-
+    
     delete b;
     delete a;
     return 0;
